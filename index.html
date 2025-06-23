@@ -1,0 +1,875 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeEX Club - Sri Sathya Sai Institute of Higher Learning</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader-container">
+            <div class="code-loader">
+                <div class="typing-text">
+                    <span id="loading-text">Compiling CodeEX...</span>
+                    <span class="cursor">|</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-code"></i>
+                <span>CodeEX</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#modules" class="nav-link">Modules</a>
+                <a href="#events" class="nav-link">Events</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#leaderboard" class="nav-link">Leaderboard</a>
+                <a href="#resources" class="nav-link">Resources</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#join" class="nav-link cta-button">Join Club</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles-container" id="particles-js"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="typed-text" id="typed-text"></span>
+                    <span class="cursor-blink">|</span>
+                </h1>
+                <p class="hero-subtitle fade-in-up">
+                    Where Innovation Meets Excellence at Sri Sathya Sai Institute of Higher Learning
+                </p>
+                <div class="hero-buttons fade-in-up">
+                    <a href="#join" class="btn btn-primary pulse-btn">
+                        <i class="fas fa-rocket"></i>
+                        Join Our Journey
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Discover More
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span>Scroll to Explore</span>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number" data-count="500">0</span>
+                <span class="stat-label">Active Members</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="150">0</span>
+                <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="25">0</span>
+                <span class="stat-label">Events</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About CodeEX Club</h2>
+                <p class="section-subtitle">Nurturing Tomorrow's Tech Leaders</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="mission-vision">
+                        <div class="mission card-hover">
+                            <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                            <p>To inspire and equip students with cutting-edge technical skills while nurturing integrity, creativity, and teamwork in the spirit of Sathya Sai's teachings.</p>
+                        </div>
+                        <div class="vision card-hover">
+                            <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                            <p>To lead innovation and contribute to society through technology, creating a community of ethical programmers and problem solvers.</p>
+                        </div>
+                    </div>
+                    <div class="institute-info card-hover">
+                        <h3><i class="fas fa-university"></i> About SSSIHL</h3>
+                        <p>Sri Sathya Sai Institute of Higher Learning stands as a modern Gurukula, blending ancient wisdom with contemporary education. Our institution fosters holistic development, preparing students to serve humanity with love and compassion.</p>
+                        <a href="https://www.sssihl.edu.in" target="_blank" class="institute-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Visit SSSIHL Official Website
+                        </a>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Innovation Hub</h4>
+                            <p>Cutting-edge projects and research initiatives</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Community</h4>
+                            <p>Collaborative learning environment</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h4>Excellence</h4>
+                            <p>Commitment to quality and achievement</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h4>Values</h4>
+                            <p>Ethics and integrity in technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section id="modules" class="section modules-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Learning Modules</h2>
+                <p class="section-subtitle">Structured Learning Paths for Every Level</p>
+            </div>
+            <div class="modules-content">
+                <div class="module-tabs">
+                    <button class="tab-btn active" data-tab="beginner">
+                        <i class="fas fa-seedling"></i>
+                        Beginner
+                    </button>
+                    <button class="tab-btn" data-tab="intermediate">
+                        <i class="fas fa-tree"></i>
+                        Intermediate
+                    </button>
+                    <button class="tab-btn" data-tab="advanced">
+                        <i class="fas fa-rocket"></i>
+                        Advanced
+                    </button>
+                </div>
+                <div class="module-content">
+                    <div class="tab-panel active" id="beginner">
+                        <div class="module-grid">
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <i class="fab fa-python"></i>
+                                    <h4>Programming Fundamentals</h4>
+                                </div>
+                                <ul class="module-topics">
+                                    <li>Python Basics</li>
+                                    <li>C/C++ Programming</li>
+                                    <li>Logic Building</li>
+                                    <li>Problem Solving</li>
+                                </ul>
+                            </div>
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <i class="fab fa-html5"></i>
+                                    <h4>Web Technologies</h4>
+                                </div>
+                                <ul class="module-topics">
+                                    <li>HTML5 & CSS3</li>
+                                    <li>JavaScript Essentials</li>
+                                    <li>Responsive Design</li>
+                                    <li>DOM Manipulation</li>
+                                </ul>
+                            </div>
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <i class="fas fa-project-diagram"></i>
+                                    <h4>Beginner Projects</h4>
+                                </div>
+                                <ul class="module-topics">
+                                    <li>Calculator App</li>
+                                    <li>To-Do List</li>
+                                    <li>Personal Webpage</li>
+                                    <li>Simple Games</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="intermediate">
+                        <div class="module-grid">
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <i class="fas fa-database"></i>
+                                    <h4>Data Structures & Algorithms</h4>
+                                </div>
+                                <ul class="module-topics">
+                                    <li>Arrays & Linked Lists</li>
+                                    <li>Trees & Graphs</li>
+                                    <li>Sorting & Searching</li>
+                                    <li>Dynamic Programming</li>
+                                </ul>
+                            </div>
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <i class="fas fa-chart-line"></i>
+                                    <h4>Data Science</h4>
+                                </div>
+                                <ul class="module-topics">
+                                    <li>Pandas & NumPy</li>
+                                    <li>Data Preprocessing</li>
+                                    <li>Feature Engineering</li>
+                                    <li>Visualization</li>
+                                </ul>
+                            </div>
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <i class="fas fa-cog"></i>
+                                    <h4>Intermediate Projects</h4>
+                                </div>
+                                <ul class="module-topics">
+                                    <li>Inventory Management</li>
+                                    <li>Image Processing</li>
+                                    <li>API Development</li>
+                                    <li>Database Systems</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="advanced">
+                        <div class="module-grid">
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <i class="fas fa-robot"></i>
+                                    <h4>Machine Learning</h4>
+                                </div>
+                                <ul class="module-topics">
+                                    <li>ML Algorithms</li>
+                                    <li>Neural Networks</li>
+                                    <li>Computer Vision</li>
+                                    <li>OpenCV Projects</li>
+                                </ul>
+                            </div>
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <i class="fas fa-cloud"></i>
+                                    <h4>Cloud Computing</h4>
+                                </div>
+                                <ul class="module-topics">
+                                    <li>AWS Fundamentals</li>
+                                    <li>Cloud Architecture</li>
+                                    <li>DevOps Basics</li>
+                                    <li>Deployment</li>
+                                </ul>
+                            </div>
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <i class="fas fa-trophy"></i>
+                                    <h4>Advanced Projects</h4>
+                                </div>
+                                <ul class="module-topics">
+                                    <li>Face Detection System</li>
+                                    <li>Cloud Applications</li>
+                                    <li>AI-Powered Apps</li>
+                                    <li>Full-Stack Projects</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section events-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Upcoming Events</h2>
+                <p class="section-subtitle">Join Our Exciting Programming Events</p>
+            </div>
+            <div class="events-content">
+                <div class="countdown-container">
+                    <h3>Next Event Countdown</h3>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span id="days">00</span>
+                            <label>Days</label>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours">00</span>
+                            <label>Hours</label>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <label>Minutes</label>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <label>Seconds</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="events-grid">
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=400&h=250&fit=crop" alt="Hackion 2024">
+                            <div class="event-overlay">
+                                <span class="event-type">Hackathon</span>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h4>Hackion 2024</h4>
+                            <p>48-hour coding marathon with amazing prizes and learning opportunities.</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-calendar"></i> July 15-17, 2024</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Campus Auditorium</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">Register Now</a>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=400&h=250&fit=crop" alt="Night of 100 Bugs">
+                            <div class="event-overlay">
+                                <span class="event-type">Competition</span>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h4>Night of 100 Bugs</h4>
+                            <p>Find and fix bugs in various programming challenges. Test your debugging skills!</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-calendar"></i> August 5, 2024</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Computer Lab</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-image">
+                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=250&fit=crop" alt="AI Workshop">
+                            <div class="event-overlay">
+                                <span class="event-type">Workshop</span>
+                            </div>
+                        </div>
+                        <div class="event-content">
+                            <h4>AI & ML Workshop</h4>
+                            <p>Hands-on workshop on Artificial Intelligence and Machine Learning fundamentals.</p>
+                            <div class="event-meta">
+                                <span><i class="fas fa-calendar"></i> September 12, 2024</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Tech Lab</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Student Projects</h2>
+                <p class="section-subtitle">Showcasing Innovation and Creativity</p>
+            </div>
+            <div class="projects-content">
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="ai">AI/ML</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="iot">IoT</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="E-commerce Platform">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>E-commerce Platform</h4>
+                            <p>Full-stack e-commerce solution with payment integration and user management.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="ai">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?w=400&h=250&fit=crop" alt="Face Recognition System">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Face Recognition System</h4>
+                            <p>Real-time face detection and recognition using computer vision techniques.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">TensorFlow</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop" alt="Task Manager App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Task Manager App</h4>
+                            <p>Cross-platform mobile app for task management with offline sync capabilities.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">SQLite</span>
+                                <span class="tech-tag">Redux</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="iot">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=250&fit=crop" alt="Smart Home System">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Smart Home System</h4>
+                            <p>IoT-based home automation system with mobile app control and voice commands.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Arduino</span>
+                                <span class="tech-tag">IoT</span>
+                                <span class="tech-tag">Flutter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" class="section leaderboard-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Leaderboard</h2>
+                <p class="section-subtitle">Top Performers in Our Community</p>
+            </div>
+            <div class="leaderboard-content">
+                <div class="leaderboard-controls">
+                    <input type="text" id="search-leaderboard" placeholder="Search members..." class="search-input">
+                    <select id="sort-leaderboard" class="sort-select">
+                        <option value="score">Sort by Score</option>
+                        <option value="name">Sort by Name</option>
+                    </select>
+                </div>
+                <div class="leaderboard-chart">
+                    <canvas id="leaderboard-chart"></canvas>
+                </div>
+                <div class="leaderboard-table">
+                    <table id="leaderboard-data">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Name</th>
+                                <th>Score</th>
+                                <th>Level</th>
+                                <th>Projects</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboard-tbody">
+                            <!-- Data will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="section resources-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Learning Resources</h2>
+                <p class="section-subtitle">Curated Materials for Your Learning Journey</p>
+            </div>
+            <div class="resources-content">
+                <div class="resource-filters">
+                    <button class="filter-btn active" data-filter="all">All Resources</button>
+                    <button class="filter-btn" data-filter="tutorials">Tutorials</button>
+                    <button class="filter-btn" data-filter="books">Books</button>
+                    <button class="filter-btn" data-filter="tools">Tools</button>
+                    <button class="filter-btn" data-filter="cheatsheets">Cheat Sheets</button>
+                </div>
+                <div class="resources-grid">
+                    <div class="resource-card" data-category="tutorials">
+                        <div class="resource-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h4>Python Complete Guide</h4>
+                            <p>Comprehensive Python tutorial covering basics to advanced concepts with practical examples.</p>
+                            <div class="resource-meta">
+                                <span class="resource-type">PDF Tutorial</span>
+                                <span class="resource-size">2.5 MB</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                    <div class="resource-card" data-category="books">
+                        <div class="resource-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h4>Data Structures Handbook</h4>
+                            <p>Essential data structures and algorithms explained with C++ implementations.</p>
+                            <div class="resource-meta">
+                                <span class="resource-type">E-Book</span>
+                                <span class="resource-size">5.8 MB</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                    <div class="resource-card" data-category="tools">
+                        <div class="resource-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h4>Development Tools Setup</h4>
+                            <p>Step-by-step guide to setting up your development environment for various technologies.</p>
+                            <div class="resource-meta">
+                                <span class="resource-type">Setup Guide</span>
+                                <span class="resource-size">1.2 MB</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                    <div class="resource-card" data-category="cheatsheets">
+                        <div class="resource-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="resource-content">
+                            <h4>JavaScript Cheat Sheet</h4>
+                            <p>Quick reference for JavaScript syntax, methods, and best practices.</p>
+                            <div class="resource-meta">
+                                <span class="resource-type">Cheat Sheet</span>
+                                <span class="resource-size">0.5 MB</span>
+                            </div>
+                            <a href="#" class="btn btn-outline">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="section join-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Join CodeEX Club</h2>
+                <p class="section-subtitle">Begin Your Coding Journey With Us</p>
+            </div>
+            <div class="join-content">
+                <div class="join-form-container">
+                    <form id="join-form" class="join-form">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rollNumber">Roll Number</label>
+                            <input type="text" id="rollNumber" name="rollNumber" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="branch">Branch</label>
+                            <select id="branch" name="branch" required>
+                                <option value="">Select your branch</option>
+                                <option value="cse">Computer Science</option>
+                                <option value="ece">Electronics & Communication</option>
+                                <option value="mech">Mechanical Engineering</option>
+                                <option value="civil">Civil Engineering</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Academic Year</label>
+                            <select id="year" name="year" required>
+                                <option value="">Select your year</option>
+                                <option value="1">First Year</option>
+                                <option value="2">Second Year</option>
+                                <option value="3">Third Year</option>
+                                <option value="4">Fourth Year</option>
+                                <option value="pg">Post Graduate</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Area of Interest</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select your interest</option>
+                                <option value="web">Web Development</option>
+                                <option value="mobile">Mobile App Development</option>
+                                <option value="ai">Artificial Intelligence</option>
+                                <option value="ds">Data Science</option>
+                                <option value="cybersecurity">Cybersecurity</option>
+                                <option value="iot">Internet of Things</option>
+                                <option value="blockchain">Blockchain</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="experience">Programming Experience</label>
+                            <select id="experience" name="experience" required>
+                                <option value="">Select your level</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="github">GitHub Profile (Optional)</label>
+                            <input type="url" id="github" name="github" placeholder="https://github.com/yourusername">
+                        </div>
+                        <div class="form-group">
+                            <label for="motivation">Why do you want to join CodeEX?</label>
+                            <textarea id="motivation" name="motivation" rows="4" placeholder="Tell us about your motivation and goals..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-rocket"></i>
+                            Join CodeEX Club
+                        </button>
+                    </form>
+                </div>
+                <div class="join-benefits">
+                    <h3>Why Join CodeEX?</h3>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Skill Development</h4>
+                                <p>Learn cutting-edge technologies with hands-on projects</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Networking</h4>
+                                <p>Connect with like-minded peers and industry experts</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <h4>Competitions</h4>
+                                <p>Participate in hackathons and coding competitions</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h4>Career Support</h4>
+                                <p>Get guidance for internships and job placements</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Connect with CodeEX Club</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Institute Address</h4>
+                            <p>Sri Sathya Sai Institute of Higher Learning<br>
+                            Prasanthi Nilayam, Anantapur District<br>
+                            Andhra Pradesh - 515134, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>codeex@sssihl.edu.in<br>
+                            info.codeex@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+91 8555 287239<br>
+                            +91 8555 287240</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.515367647488!2d77.80915331484107!3d14.16474579000892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb770f15a5c6565%3A0x5f8e8b7e0b0c7b3a!2sSri%20Sathya%20Sai%20Institute%20of%20Higher%20Learning!5e0!3m2!1sen!2sin!4v1624287456789!5m2!1sen!2sin" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>CodeEX Club</span>
+                    </div>
+                    <p>Empowering students at SSSIHL with cutting-edge programming skills and fostering innovation through technology.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#modules">Learning Modules</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#join">Join Club</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#resources">Study Materials</a></li>
+                        <li><a href="#leaderboard">Leaderboard</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Career Guidance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info-footer">
+                        <p><i class="fas fa-envelope"></i> codeex@sssihl.edu.in</p>
+                        <p><i class="fas fa-phone"></i> +91 8555 287239</p>
+                        <p><i class="fas fa-map-marker-alt"></i> SSSIHL, Prasanthi Nilayam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 CodeEX Club, Sri Sathya Sai Institute of Higher Learning. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/leaderboard.js"></script>
+</body>
+</html>
