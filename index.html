@@ -764,129 +764,129 @@
         </div>
     </section>
 
-<!-- Crash Course Section Start -->
-<section id="crash-course" style="padding: 60px 20px; background: linear-gradient(to right, #0f2027, #203a43, #2c5364); color: #fff; font-family: 'Segoe UI', sans-serif;">
-  <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 40px;">Crash Course Series (Python)</h2>
-
-  <div class="accordion-container">
-
-    <!-- Week 1 -->
-    <div class="accordion-item">
-      <button class="accordion-btn">Week 1: The Python Kickstart</button>
-      <div class="accordion-content">
-        <ul>
-          <li><a href="#" target="_blank">Variables & Data Types in Python</a></li>
-          <li><a href="#" target="_blank">Conditional Statements: If, Else</a></li>
-          <li><a href="#" target="_blank">Loops Demystified: For & While</a></li>
-          <li><a href="#" target="_blank">Your First Python Calculator</a></li>
-          <li><a href="#" target="_blank">Mini Project: Digital Clock</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Week 2 -->
-    <div class="accordion-item">
-      <button class="accordion-btn">Week 2: Python Building Blocks: From Lists to To-Do Apps</button>
-      <div class="accordion-content">
-        <ul>
-          <li><a href="#" target="_blank">All-in-One Guide: Lists, Tuples, Dicts, Functions & To-Do App</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Week 3 -->
-    <div class="accordion-item">
-      <button class="accordion-btn">Week 3: From Code to Structure — Mastering Python Like a Pro!</button>
-      <div class="accordion-content">
-        <ul>
-          <li><a href="#" target="_blank">Python OOP Explained with Delivery App</a></li>
-          <li><a href="#" target="_blank">Classes in Python for Dummies</a></li>
-          <li><a href="#" target="_blank">File Handling in Python</a></li>
-          <li><a href="#" target="_blank">Exception Handling Like a Pro</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Week 4 -->
-    <div class="accordion-item">
-      <button class="accordion-btn">Week 4: Data on Your Plate: Cook Up a Food Tracker with Python</button>
-      <div class="accordion-content">
-        <ul>
-          <li><a href="#" target="_blank">Working with APIs and JSON in Python</a></li>
-          <li><a href="#" target="_blank">Beginner’s Guide to Pandas & Visualization</a></li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<style>
-  .accordion-container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  .accordion-item {
-    margin-bottom: 15px;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #1c1c1c;
-    box-shadow: 0 0 8px rgba(0,0,0,0.3);
-  }
-  .accordion-btn {
-    width: 100%;
-    text-align: left;
-    padding: 18px 25px;
-    background: #111;
-    color: #fff;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    transition: 0.3s;
-  }
-  .accordion-btn:hover {
-    background: #292929;
-  }
-  .accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    background: #222;
-    transition: max-height 0.4s ease;
-  }
-  .accordion-content ul {
-    padding: 15px 30px;
-    list-style: disc;
-  }
-  .accordion-content ul li {
-    margin: 10px 0;
-  }
-  .accordion-content ul li a {
-    color: #80dfff;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  .accordion-content ul li a:hover {
-    text-decoration: underline;
-  }
-</style>
-
-<script>
-  const accBtns = document.querySelectorAll('.accordion-btn');
-  accBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
-      const content = this.nextElementSibling;
-      this.classList.toggle('active');
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        document.querySelectorAll('.accordion-content').forEach(el => el.style.maxHeight = null);
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-    });
-  });
-</script>
-<!-- Crash Course Section End -->
+        <!-- Crash Course Section Start -->
+        <section id="crash-course" style="padding: 60px 20px; background: linear-gradient(to right, #0f2027, #203a43, #2c5364); color: #fff; font-family: 'Segoe UI', sans-serif;">
+          <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 40px;">Crash Course Series (Python)</h2>
+        
+          <div class="accordion-container">
+        
+            <!-- Week 1 -->
+            <div class="accordion-item">
+              <button class="accordion-btn">Week 1: The Python Kickstart</button>
+              <div class="accordion-content">
+                <ul>
+                  <li><a href="#" target="_blank">Variables & Data Types in Python</a></li>
+                  <li><a href="#" target="_blank">Conditional Statements: If, Else</a></li>
+                  <li><a href="#" target="_blank">Loops Demystified: For & While</a></li>
+                  <li><a href="#" target="_blank">Your First Python Calculator</a></li>
+                  <li><a href="#" target="_blank">Mini Project: Digital Clock</a></li>
+                </ul>
+              </div>
+            </div>
+        
+            <!-- Week 2 -->
+            <div class="accordion-item">
+              <button class="accordion-btn">Week 2: Python Building Blocks: From Lists to To-Do Apps</button>
+              <div class="accordion-content">
+                <ul>
+                  <li><a href="#" target="_blank">All-in-One Guide: Lists, Tuples, Dicts, Functions & To-Do App</a></li>
+                </ul>
+              </div>
+            </div>
+        
+            <!-- Week 3 -->
+            <div class="accordion-item">
+              <button class="accordion-btn">Week 3: From Code to Structure — Mastering Python Like a Pro!</button>
+              <div class="accordion-content">
+                <ul>
+                  <li><a href="#" target="_blank">Python OOP Explained with Delivery App</a></li>
+                  <li><a href="#" target="_blank">Classes in Python for Dummies</a></li>
+                  <li><a href="#" target="_blank">File Handling in Python</a></li>
+                  <li><a href="#" target="_blank">Exception Handling Like a Pro</a></li>
+                </ul>
+              </div>
+            </div>
+        
+            <!-- Week 4 -->
+            <div class="accordion-item">
+              <button class="accordion-btn">Week 4: Data on Your Plate: Cook Up a Food Tracker with Python</button>
+              <div class="accordion-content">
+                <ul>
+                  <li><a href="#" target="_blank">Working with APIs and JSON in Python</a></li>
+                  <li><a href="#" target="_blank">Beginner’s Guide to Pandas & Visualization</a></li>
+                </ul>
+              </div>
+            </div>
+        
+          </div>
+        </section>
+        
+        <style>
+          .accordion-container {
+            max-width: 900px;
+            margin: 0 auto;
+          }
+          .accordion-item {
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #1c1c1c;
+            box-shadow: 0 0 8px rgba(0,0,0,0.3);
+          }
+          .accordion-btn {
+            width: 100%;
+            text-align: left;
+            padding: 18px 25px;
+            background: #111;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            transition: 0.3s;
+          }
+          .accordion-btn:hover {
+            background: #292929;
+          }
+          .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            background: #222;
+            transition: max-height 0.4s ease;
+          }
+          .accordion-content ul {
+            padding: 15px 30px;
+            list-style: disc;
+          }
+          .accordion-content ul li {
+            margin: 10px 0;
+          }
+          .accordion-content ul li a {
+            color: #80dfff;
+            text-decoration: none;
+            font-weight: 500;
+          }
+          .accordion-content ul li a:hover {
+            text-decoration: underline;
+          }
+        </style>
+        
+        <script>
+          const accBtns = document.querySelectorAll('.accordion-btn');
+          accBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+              const content = this.nextElementSibling;
+              this.classList.toggle('active');
+              if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+              } else {
+                document.querySelectorAll('.accordion-content').forEach(el => el.style.maxHeight = null);
+                content.style.maxHeight = content.scrollHeight + "px";
+              }
+            });
+          });
+        </script>
+        <!-- Crash Course Section End -->
 
     <!-- Join Section -->
     <section id="join" class="section join-section">
