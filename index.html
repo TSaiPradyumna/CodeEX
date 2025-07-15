@@ -1117,6 +1117,88 @@
             </div>
         </div>
     </section>
+    <!--  Code Playground -->
+    <section id="playground" style="background:#0a0a0a; color:#fff; padding:60px 20px; font-family: monospace;">
+      <h2 style="text-align:center; font-size:30px; margin-bottom:20px; color:#00f7ff;">🧪 Code Playground</h2>
+      <p style="text-align:center; margin-bottom:30px; color:#aaa;">Write HTML/CSS/JS below and see the live output instantly</p>
+    
+      <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <textarea id="code" placeholder=" Type HTML, CSS, or JS here..." style="flex:1; min-height:300px; padding:10px; background:#111; color:#0f0; border:1px solid #333; border-radius:5px; width:100%;"></textarea>
+        <iframe id="preview" style="flex:1; min-height:300px; width:100%; background:#fff; border:1px solid #444; border-radius:5px;"></iframe>
+      </div>
+    </section>
+    
+    <script>
+      const codeInput = document.getElementById("code");
+      const preview = document.getElementById("preview");
+    
+      codeInput.addEventListener("input", () => {
+        const html = codeInput.value;
+        preview.srcdoc = html;
+      });
+    
+      codeInput.value = `<!-- Try this! -->
+    <h1>Hello from CodeEX </h1>
+    <style> h1 { color: red; text-align:center; } </style>
+    <script> alert("Welcome to the playground!") </script>`;
+      preview.srcdoc = codeInput.value;
+    </script>
+
+    <!--  Trending Tools -->
+    <section style="background:#131313; color:white; padding:60px 20px;">
+      <h2 style="text-align:center; color:#ffbb00;"> Trending Dev Tools</h2>
+      <p style="text-align:center; margin-bottom:30px;">Stay updated with the best productivity boosters</p>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px; max-width:900px; margin:auto;">
+        <div style="background:#222; padding:20px; border-radius:8px;">
+          <h3 style="color:#00ffb7;"> ChatGPT for VSCode</h3>
+          <p>Use AI to autocomplete & explain code in real-time.</p>
+        </div>
+        <div style="background:#222; padding:20px; border-radius:8px;">
+          <h3 style="color:#ffa700;"> Wappalyzer Extension</h3>
+          <p>Find tech stack of any website with 1 click.</p>
+        </div>
+        <div style="background:#222; padding:20px; border-radius:8px;">
+          <h3 style="color:#9d80ff;"> Carbon Tool</h3>
+          <p>Create beautiful code screenshots for sharing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contribute Section -->
+    <section style="background:#0f0f0f; color:#fff; padding:60px 20px;">
+      <h2 style="text-align:center; color:#00eaff;"> Share Your Code</h2>
+      <p style="text-align:center; margin-bottom:20px;">Submit your useful snippet to get featured!</p>
+      <div style="max-width:600px; margin:auto;">
+        <textarea placeholder="Paste your snippet here..." rows="8" style="width:100%; background:#1e1e1e; color:#0f0; padding:10px; border-radius:5px; font-family:monospace;"></textarea>
+        <button onclick="alert(' Submitted for review!')" style="margin-top:10px; padding:10px 20px; background:#00ffcc; border:none; color:#000; border-radius:5px; font-weight:bold; cursor:pointer;">Submit Snippet</button>
+      </div>
+    </section>
+    <!--  Coding Quiz -->
+    <section style="background:#121212; color:white; padding:60px 20px; font-family:sans-serif;">
+      <h2 style="text-align:center; color:#00e5ff;"> Code Quiz</h2>
+      <p style="text-align:center; margin-bottom:20px;">Test your coding knowledge!</p>
+    
+      <div id="quiz" style="max-width:600px; margin:auto; background:#1e1e1e; padding:20px; border-radius:10px;">
+        <p id="question">What does HTML stand for?</p>
+        <button onclick="answerQuiz(0)">Hyperlinks and Text Markup Language</button><br><br>
+        <button onclick="answerQuiz(1)">Hyper Text Markup Language</button><br><br>
+        <button onclick="answerQuiz(2)">Home Tool Markup Language</button><br><br>
+        <p id="feedback" style="margin-top:10px;"></p>
+      </div>
+    </section>
+    
+    <script>
+      const feedback = document.getElementById("feedback");
+      function answerQuiz(option) {
+        if (option === 1) {
+          feedback.innerHTML = "Correct! HTML stands for Hyper Text Markup Language.";
+          feedback.style.color = "#0f0";
+        } else {
+          feedback.innerHTML = " Wrong! Try again.";
+          feedback.style.color = "#f00";
+        }
+      }
+    </script>
 
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
