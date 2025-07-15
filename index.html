@@ -888,36 +888,75 @@
           });
         </script>
         <!-- Crash Course Section End -->
-    
-        <!-- CodeEX AI Assistant -->
-        <section id="ai-assistant" style="background: #111; color: #fff; padding: 60px 20px; font-family: monospace;">
-          <div class="container">
-            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 40px;">CodeEX AI Code Assistant</h2>
-            <div id="chatbox" style="max-width: 800px; margin: auto; background: #222; border-radius: 10px; padding: 20px; height: 300px; overflow-y: auto;">
-              <p><span style="color: #00ff9c;">You:</span> How to write a Python loop?</p>
-              <p><span style="color: #ffdd57;">CodeEX AI:</span> <code>for i in range(5): print(i)</code></p>
-              <p><span style="color: #00ff9c;">You:</span> How to use if-else?</p>
-              <p><span style="color: #ffdd57;">CodeEX AI:</span> <code>if x > 0: print("Positive") else: print("Negative")</code></p>
+        <!--  AI Assistant Section -->
+        <section id="ai-assistant" style="background: #0f0f0f; color: #fff; font-family: 'Courier New', monospace; padding: 60px 20px;">
+          <div style="max-width: 800px; margin: auto;">
+            <h2 style="text-align: center; font-size: 32px; color: #00ffcc; margin-bottom: 30px;">🤖 Ask CodeEX AI Assistant</h2>
+            
+            <div id="chat-box" style="background: #1b1b1b; padding: 20px; height: 300px; overflow-y: auto; border-radius: 8px; box-shadow: 0 0 10px #00ffcc;">
+              <p style="color: #aaa;">Welcome! Ask me anything about programming, tools, or general questions.</p>
             </div>
-            <div style="text-align:center; margin-top: 20px;">
-              <button onclick="simulateChat()" style="padding: 10px 25px; background: #0f0; color: #111; border: none; border-radius: 10px; font-weight: bold; cursor: pointer;">Talk to AI</button>
+        
+            <div style="margin-top: 20px; display: flex; gap: 10px;">
+              <input type="text" id="user-input" placeholder="Type your question here..." style="flex: 1; padding: 12px 16px; font-size: 16px; border-radius: 5px; border: none;">
+              <button onclick="sendToAI()" style="padding: 12px 20px; background: #00ffcc; color: #000; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">Ask</button>
             </div>
           </div>
         </section>
         
+        <!-- Typing Animation + API Logic -->
         <script>
-        function simulateChat() {
-          const chatbox = document.getElementById("chatbox");
-          const q = document.createElement("p");
-          const a = document.createElement("p");
-          q.innerHTML = `<span style="color: #00ff9c;">You:</span> What's a function in JS?`;
-          a.innerHTML = `<span style="color: #ffdd57;">CodeEX AI:</span> <code>function greet() { alert("Hello!"); }</code>`;
-          chatbox.appendChild(q);
-          chatbox.appendChild(a);
-          chatbox.scrollTop = chatbox.scrollHeight;
+        async function sendToAI() {
+          const input = document.getElementById("user-input");
+          const box = document.getElementById("chat-box");
+          const query = input.value.trim();
+          if (!query) return;
+        
+          // Add User Message
+          const userMsg = document.createElement("p");
+          userMsg.innerHTML = `<span style="color:#00ffcc;">You:</span> ${query}`;
+          box.appendChild(userMsg);
+        
+          // Add AI "thinking" message
+          const aiMsg = document.createElement("p");
+          aiMsg.innerHTML = `<span style="color:#ffdd57;">CodeEX AI:</span> <span id="typing">Thinking...</span>`;
+          box.appendChild(aiMsg);
+          box.scrollTop = box.scrollHeight;
+        
+          try {
+            const res = await fetch(`https://api.duckduckgo.com/?q=${encodeURIComponent(query)}&format=json&no_redirect=1`);
+            const data = await res.json();
+        
+            let answer = data.Abstract || data.RelatedTopics[0]?.Text || "🔍 I couldn't find an instant answer. Try rephrasing or being more specific!";
+            typeAnswer(answer, aiMsg);
+          } catch (e) {
+            aiMsg.innerHTML = `<span style="color:#ffdd57;">CodeEX AI:</span> ❌ Oops! Something went wrong while fetching the answer.`;
+          }
+        
+          input.value = "";
+        }
+        
+        // Typing Animation
+        function typeAnswer(text, targetElement) {
+          const delay = 30;
+          let i = 0;
+          const typingSpan = document.createElement("span");
+          typingSpan.style.color = "#eee";
+          typingSpan.style.display = "inline-block";
+          targetElement.innerHTML = `<span style="color:#ffdd57;">CodeEX AI:</span> `;
+          targetElement.appendChild(typingSpan);
+        
+          function typeChar() {
+            if (i < text.length) {
+              typingSpan.innerHTML += text.charAt(i);
+              i++;
+              setTimeout(typeChar, delay);
+            }
+          }
+        
+          typeChar();
         }
         </script>
-
 
     <!-- Join Section -->
     <section id="join" class="section join-section">
