@@ -1594,6 +1594,106 @@
       window.onload = () => loadQuestion(currentQuestion);
     </script>
 
+            <section id="partners" class="partners-section">
+      <div class="overlay"></div>
+      <h2>Partners & Collaborators</h2>
+      <div class="partners-container">
+        <div class="partner-card">
+          <img src="images/sssihllogo.png" alt="Partner 1 Logo">
+          <h3>Sri Sathya Sai Institute of Higher Learning</h3>
+          <p>Collaborating on workshops, mentorship & event support.</p>
+        </div>
+        <div class="partner-card">
+          <img src="images/dmacslogo.png" alt="Partner 2 Logo">
+          <h3>Department of Mathematical Sciences and Computing</h3>
+          <p>Supporting AI learning tracks & hackathon sponsorship.</p>
+        </div>
+      </div>
+    </section>
+    
+    <style>
+    .partners-section {
+      position: relative;
+      background: #05051e;
+      color: #e0eaff;
+      text-align: center;
+      padding: 80px 20px;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    
+    .partners-section .overlay {
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: radial-gradient(circle, rgba(0,229,255,0.3), transparent 70%);
+      animation: pulse 8s ease-in-out infinite alternate;
+      pointer-events: none;
+    }
+    
+    @keyframes pulse {
+      from { transform: scale(1) rotate(0deg); opacity:0.8; }
+      to { transform: scale(1.2) rotate(45deg); opacity:0.4; }
+    }
+    
+    .partners-section h2 {
+      font-size: 2.8rem;
+      margin-bottom: 50px;
+      z-index:1;
+      position: relative;
+      color: #00e5ff;
+    }
+    
+    .partners-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index:1;
+    }
+    
+    .partner-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid #00e5ff;
+      border-radius: 12px;
+      width: 260px;
+      padding: 30px;
+      color: #e0faff;
+      transition: transform 0.4s, box-shadow 0.4s;
+      backdrop-filter: blur(10px);
+    }
+    
+    .partner-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 30px rgba(0, 229, 255, 0.5);
+    }
+    
+    .partner-card img {
+      max-width: 100px;
+      margin-bottom: 20px;
+    }
+    
+    .partner-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      color: #00f7ff;
+    }
+    
+    .partner-card p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #cfefff;
+    }
+    
+    @media(max-width:768px) {
+      .partners-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    </style>
+
+
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
         <div class="container">
