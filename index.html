@@ -859,198 +859,427 @@
         </div>
     </section>
 
-    <!-- Resources Section -->
-    <section id="resources" class="section resources-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Learning Resources</h2>
-                <p class="section-subtitle">Curated Materials for Your Learning Journey</p>
+<!-- Resources Section -->
+<section id="resources" class="section resources-section">
+    <div class="tech-bg-overlay">
+        <div class="tech-particles"></div>
+    </div>
+    <div class="container">
+        <div class="section-header animate__animated animate__fadeIn">
+            <h2 class="section-title">Learning Resources</h2>
+            <p class="section-subtitle">Curated Materials for Your Tech Journey</p>
+        </div>
+        <div class="resources-content">
+            <div class="resource-filters animate__animated animate__fadeInUp">
+                <button class="filter-btn active" data-filter="all">All Resources</button>
+                <button class="filter-btn" data-filter="tutorials">Tutorials</button>
+                <button class="filter-btn" data-filter="books">Books</button>
+                <button class="filter-btn" data-filter="tools">Tools</button>
+                <button class="filter-btn" data-filter="cheatsheets">Cheat Sheets</button>
             </div>
-            <div class="resources-content">
-                <div class="resource-filters">
-                    <button class="filter-btn active" data-filter="all">All Resources</button>
-                    <button class="filter-btn" data-filter="tutorials">Tutorials</button>
-                    <button class="filter-btn" data-filter="books">Books</button>
-                    <button class="filter-btn" data-filter="tools">Tools</button>
-                    <button class="filter-btn" data-filter="cheatsheets">Cheat Sheets</button>
+            <div class="resources-grid">
+                <div class="resource-card animate__animated animate__fadeInUp" data-category="tutorials">
+                    <div class="resource-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h4>Python Complete Guide</h4>
+                        <p>Comprehensive Python tutorial covering basics to advanced concepts with practical examples.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PDF Tutorial</span>
+                            <span class="resource-size">2.5 MB</span>
+                        </div>
+                        <a href="https://github.com/trekhleb/learn-python/tree/master/src" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
+                    </div>
                 </div>
-                <div class="resources-grid">
-                    <div class="resource-card" data-category="tutorials">
-                        <div class="resource-icon">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <div class="resource-content">
-                            <h4>Python Complete Guide</h4>
-                            <p>Comprehensive Python tutorial covering basics to advanced concepts with practical examples.</p>
-                            <div class="resource-meta">
-                                <span class="resource-type">PDF Tutorial</span>
-                                <span class="resource-size">2.5 MB</span>
-                            </div>
-                            <a href="https://github.com/trekhleb/learn-python/tree/master/src" class="btn btn-outline">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                        </div>
-                        <div class="resource-content">
-                            <h4>C Language Complete Guide</h4>
-                            <p>Comprehensive C tutorial covering basics to advanced concepts with practical examples.</p>
-                            <div class="resource-meta">
-                                <span class="resource-type">PDF Tutorial</span>
-                                <span class="resource-size">2.5 MB</span>
-                            </div>
-                            <a href="https://github.com/CodeWithHarry/The-Ultimate-C-Programming-Course" class="btn btn-outline">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                        </div>
-                        <div class="resource-content">
-                            <h4>CPP Language Complete Guide</h4>
-                            <p>Comprehensive CPP tutorial covering basics to advanced concepts with practical examples.</p>
-                            <div class="resource-meta">
-                                <span class="resource-type">PDF Tutorial</span>
-                                <span class="resource-size">2.5 MB</span>
-                            </div>
-                            <a href="https://github.com/getvmio/free-cpp-resources" class="btn btn-outline">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                        </div>
-                        <div class="resource-content">
-                            <h4>HTML CSS and JS Complete Guide</h4>
-                            <p>Comprehensive Frontend tutorial covering basics to advanced concepts with practical examples.</p>
-                            <div class="resource-meta">
-                                <span class="resource-type">PDF Tutorial</span>
-                                <span class="resource-size">2.5 MB</span>
-                            </div>
-                            <a href="https://github.com/FrontendFreaks/Learn-HTML-CSS-JS/tree/main" class="btn btn-outline">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                        </div>
+                <div class="resource-card animate__animated animate__fadeInUp" data-category="tutorials">
+                    <div class="resource-icon">
+                        <i class="fas fa-code"></i>
                     </div>
-                    <div class="resource-card" data-category="books">
-                        <div class="resource-icon">
-                            <i class="fas fa-book"></i>
+                    <div class="resource-content">
+                        <h4>C Language Complete Guide</h4>
+                        <p>Comprehensive C tutorial covering basics to advanced concepts with practical examples.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PDF Tutorial</span>
+                            <span class="resource-size">2.5 MB</span>
                         </div>
-                        <div class="resource-content">
-                            <h4>Data Structures Handbook</h4>
-                            <p>Essential data structures and algorithms explained with C++ implementations.</p>
-                            <div class="resource-meta">
-                                <span class="resource-type">E-Book</span>
-                                <span class="resource-size">5.8 MB</span>
-                            </div>
-                            <a href="https://github.com/thepranaygupta/Data-Structures-and-Algorithms" class="btn btn-outline">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                        </div>
+                        <a href="https://github.com/CodeWithHarry/The-Ultimate-C-Programming-Course" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
                     </div>
-                    <div class="resource-card" data-category="tools">
-                        <div class="resource-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <div class="resource-content">
-                            <h4>Introduction to AI and ML</h4>
-                            <p>Step-by-step guide to setting up your development environment for Machine Learning and Artificial Intelligence.</p>
-                            <div class="resource-meta">
-                                <span class="resource-type">Setup Guide</span>
-                                <span class="resource-size">1.2 MB</span>
-                            </div>
-                            <a href="https://github.com/armankhondker/awesome-ai-ml-resources" class="btn btn-outline">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                        </div>
+                </div>
+                <div class="resource-card animate__animated animate__fadeInUp" data-category="tutorials">
+                    <div class="resource-icon">
+                        <i class="fas fa-code"></i>
                     </div>
-                    <div class="resource-card" data-category="cheatsheets">
-                        <div class="resource-icon">
-                            <i class="fas fa-file-alt"></i>
+                    <div class="resource-content">
+                        <h4>CPP Language Complete Guide</h4>
+                        <p>Comprehensive CPP tutorial covering basics to advanced concepts with practical examples.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PDF Tutorial</span>
+                            <span class="resource-size">2.5 MB</span>
                         </div>
-                        <div class="resource-content">
-                            <h4>Neural Networks</h4>
-                            <p>Neural Networking methods, and best practices mentioned.</p>
-                            <div class="resource-meta">
-                                <span class="resource-type">Cheat Sheet</span>
-                                <span class="resource-size">0.5 MB</span>
-                            </div>
-                            <a href="https://github.com/lionelmessi6410/Neural-Networks-from-Scratch" class="btn btn-outline">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                        </div>
-                        <div class="resource-content">
-                            <h4>Computer Vision</h4>
-                            <p>Awesome introduction to Computer Vision.</p>
-                            <div class="resource-meta">
-                                <span class="resource-type">Cheat Sheet</span>
-                                <span class="resource-size">0.5 MB</span>
-                            </div>
-                            <a href="https://github.com/jbhuang0604/awesome-computer-vision" class="btn btn-outline">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                        </div>
-                        <div class="resource-content">
-                            <h4>OpenCV</h4>
-                            <p>Introduction to OpenCV.</p>
-                            <div class="resource-meta">
-                                <span class="resource-type">Cheat Sheet</span>
-                                <span class="resource-size">0.5 MB</span>
-                            </div>
-                            <a href="https://github.com/jasmcaus/opencv-course" class="btn btn-outline">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                        </div>
+                        <a href="https://github.com/getvmio/free-cpp-resources" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
                     </div>
-                    <div class="resource-card" data-category="books">
-                        <div class="resource-icon">
-                            <i class="fas fa-book"></i>
-                        </div>
-                        <div class="resource-content">
-                            <h4>Amazon Web Services</h4>
-                            <p>Zero to Hero Resources.</p>
-                            <div class="resource-meta">
-                                <span class="resource-type">E-Book</span>
-                                <span class="resource-size">5.8 MB</span>
-                            </div>
-                            <a href="https://github.com/iam-veeramalla/aws-devops-zero-to-hero" class="btn btn-outline">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                        </div>
+                </div>
+                <div class="resource-card animate__animated animate__fadeInUp" data-category="tutorials">
+                    <div class="resource-icon">
+                        <i class="fab fa-html5"></i>
                     </div>
-                        <div class="resource-content">
-                            <h4>Cloud Computing</h4>
-                            <p>Essential materials for Cloud Computing.</p>
-                            <div class="resource-meta">
-                                <span class="resource-type">E-Book</span>
-                                <span class="resource-size">5.8 MB</span>
-                            </div>
-                            <a href="https://github.com/PacktPublishing/Learn-Cloud-Computing-from-Scratch" class="btn btn-outline">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
+                    <div class="resource-content">
+                        <h4>HTML CSS and JS Complete Guide</h4>
+                        <p>Comprehensive Frontend tutorial covering basics to advanced concepts with practical examples.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PDF Tutorial</span>
+                            <span class="resource-size">2.5 MB</span>
                         </div>
-                        <div class="resource-content">
-                            <h4>DevOps Handbook</h4>
-                            <p>DevOps Roadmap</p>
-                            <div class="resource-meta">
-                                <span class="resource-type">E-Book</span>
-                                <span class="resource-size">5.8 MB</span>
-                            </div>
-                            <a href="https://github.com/milanm/DevOps-Roadmap?tab=readme-ov-file#2-learn-one-programming-language" class="btn btn-outline">
-                                <i class="fas fa-download"></i>
-                                Download
-                            </a>
-                        </div>
+                        <a href="https://github.com/FrontendFreaks/Learn-HTML-CSS-JS/tree/main" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
                     </div>
+                </div>
+                <div class="resource-card animate__animated animate__fadeInUp" data-category="books">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h4>Data Structures Handbook</h4>
+                        <p>Essential data structures and algorithms explained with C++ implementations.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">E-Book</span>
+                            <span class="resource-size">5.8 MB</span>
+                        </div>
+                        <a href="https://github.com/thepranaygupta/Data-Structures-and-Algorithms" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
+                    </div>
+                </div>
+                <div class="resource-card animate__animated animate__fadeInUp" data-category="tools">
+                    <div class="resource-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h4>Introduction to AI and ML</h4>
+                        <p>Step-by-step guide to setting up your development environment for Machine Learning and Artificial Intelligence.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">Setup Guide</span>
+                            <span class="resource-size">1.2 MB</span>
+                        </div>
+                        <a href="https://github.com/armankhondker/awesome-ai-ml-resources" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
+                    </div>
+                </div>
+                <div class="resource-card animate__animated animate__fadeInUp" data-category="cheatsheets">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h4>Neural Networks</h4>
+                        <p>Neural Networking methods, and best practices mentioned.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">Cheat Sheet</span>
+                            <span class="resource-size">0.5 MB</span>
+                        </div>
+                        <a href="https://github.com/lionelmessi6410/Neural-Networks-from-Scratch" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
+                    </div>
+                </div>
+                <div class="resource-card animate__animated animate__fadeInUp" data-category="cheatsheets">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h4>Computer Vision</h4>
+                        <p>Awesome introduction to Computer Vision.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">Cheat Sheet</span>
+                            <span class="resource-size">0.5 MB</span>
+                        </div>
+                        <a href="https://github.com/jbhuang0604/awesome-computer-vision" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
+                    </div>
+                </div>
+                <div class="resource-card animate__animated animate__fadeInUp" data-category="cheatsheets">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h4>OpenCV</h4>
+                        <p>Introduction to OpenCV.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">Cheat Sheet</span>
+                            <span class="resource-size">0.5 MB</span>
+                        </div>
+                        <a href="https://github.com/jasmcaus/opencv-course" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
+                    </div>
+                </div>
+                <div class="resource-card animate__animated animate__fadeInUp" data-category="books">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h4>Amazon Web Services</h4>
+                        <p>Zero to Hero Resources.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">E-Book</span>
+                            <span class="resource-size">5.8 MB</span>
+                        </div>
+                        <a href="https://github.com/iam-veeramalla/aws-devops-zero-to-hero" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
+                    </div>
+                </div>
+                <div class="resource-card animate__animated animate__fadeInUp" data-category="books">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h4>Cloud Computing</h4>
+                        <p>Essential materials for Cloud Computing.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">E-Book</span>
+                            <span class="resource-size">5.8 MB</span>
+                        </div>
+                        <a href="https://github.com/PacktPublishing/Learn-Cloud-Computing-from-Scratch" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
+                    </div>
+                </div>
+                <div class="resource-card animate__animated animate__fadeInUp" data-category="books">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h4>DevOps Handbook</h4>
+                        <p>DevOps Roadmap</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">E-Book</span>
+                            <span class="resource-size">5.8 MB</span>
+                        </div>
+                        <a href="https://github.com/milanm/DevOps-Roadmap?tab=readme-ov-file#2-learn-one-programming-language" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
+<style>
+.resources-section {
+    position: relative;
+    padding: 80px 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.tech-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+    opacity: 0.3;
+    animation: bgMove 20s linear infinite;
+}
+
+.tech-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><circle cx="5" cy="5" r="1" fill="rgba(100,255,255,0.2)"/></svg>') repeat;
+    animation: particles 30s linear infinite;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0 0; }
+    100% { background-position: 100px 100px; }
+}
+
+@keyframes particles {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-50px, -50px); }
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #a0a0ff;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.resource-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid #4a4aff;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: #4a4aff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(74, 74, 255, 0.3);
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.resource-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.resource-icon {
+    font-size: 2rem;
+    color: #4a4aff;
+    margin-bottom: 15px;
+}
+
+.resource-content {
+    color: #ffffff;
+}
+
+.resource-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.resource-content p {
+    font-size: 0.9rem;
+    color: #c0c0ff;
+    margin-bottom: 15px;
+}
+
+.resource-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #a0a0ff;
+    margin-bottom: 15px;
+}
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 15px;
+    border: 2px solid #4a4aff;
+    color: #4a4aff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #4a4aff;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<script>
+// Filter functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const resourceCards = document.querySelectorAll('.resource-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+
+            const filter = button.getAttribute('data-filter');
+
+            resourceCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filter === 'all' || filter === category) {
+                    card.style.display = 'block';
+                    card.classList.remove('animate__fadeInUp');
+                    void card.offsetWidth; // Trigger reflow
+                    card.classList.add('animate__fadeInUp');
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
         <!-- Crash Course Section Start -->
         <section id="crash-course" style="padding: 60px 20px; background: linear-gradient(to right, #0f2027, #203a43, #2c5364); color: #fff; font-family: 'Segoe UI', sans-serif;">
           <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 40px;">Crash Course Series (Python)</h2>
