@@ -349,7 +349,7 @@
                 
                     let countdownDate = new Date(year, targetMonth, targetDate, 0, 0, 0);
                     if (now > countdownDate) {
-                        countdownDate = new Date(year + 1, targetMonth, targetDate, 0, 0, 0); // Next year's July 10
+                        countdownDate = new Date(year, targetMonth, targetDate, 0, 0, 0); // Next year's July 10
                     }
                 
                     // Update countdown every second
