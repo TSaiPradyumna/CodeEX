@@ -310,6 +310,163 @@
         </div>
     </section>
 
+    <section id="learning-growth" class="techie-growth">
+      <h2> Learning & Growth Tracks</h2>
+    
+      <div class="tracks">
+        <div class="track-card">
+          <h3>Frontend Developer</h3>
+          <ul>
+            <li><a href="https://roadmap.sh/frontend" target="_blank">Frontend Developer Roadmap</a></li>
+            <li><a href="https://roadmap.sh/react" target="_blank">React Roadmap</a></li>
+            <li><a href="https://roadmap.sh/nextjs" target="_blank">Next.js & Modern Frameworks</a></li>
+          </ul>
+        </div>
+    
+        <div class="track-card">
+          <h3>Backend & Full Stack</h3>
+          <ul>
+            <li><a href="https://roadmap.sh/backend" target="_blank">Backend Developer Roadmap</a></li>
+            <li><a href="https://roadmap.sh/full-stack" target="_blank">Full‑Stack Roadmap</a></li>
+            <li><a href="https://roadmap.sh/api-design" target="_blank">API Design Roadmap</a></li>
+          </ul>
+        </div>
+    
+        <div class="track-card">
+          <h3>AI / ML / Data Science</h3>
+          <ul>
+            <li><a href="https://roadmap.sh/ai-data-scientist" target="_blank">AI & Data Scientist Roadmap</a></li>
+            <li><a href="https://roadmap.sh/ai-engineer" target="_blank">AI Engineer Roadmap</a></li>
+            <li><a href="https://roadmap.sh/machine-learning" target="_blank">Machine Learning Specialization</a></li>
+          </ul>
+        </div>
+    
+        <div class="track-card">
+          <h3>Data Structures & System Design</h3>
+          <ul>
+            <li><a href="https://roadmap.sh/data-structures" target="_blank">DSA Roadmap</a></li>
+            <li><a href="https://roadmap.sh/system-design" target="_blank">System Design Roadmap</a></li>
+            <li><a href="https://roadmap.sh/software-architect" target="_blank">Software Architect Roadmap</a></li>
+          </ul>
+        </div>
+    
+        <div class="track-card">
+          <h3>DevOps & Cloud</h3>
+          <ul>
+            <li><a href="https://roadmap.sh/devops" target="_blank">DevOps Roadmap</a></li>
+            <li><a href="https://roadmap.sh/kubernetes" target="_blank">Kubernetes & Cloud Roadmap</a></li>
+            <li><a href="https://roadmap.sh/linux" target="_blank">Linux Fundamentals Roadmap</a></li>
+          </ul>
+        </div>
+    
+        <div class="track-card">
+          <h3>Specialized Tracks</h3>
+          <ul>
+            <li><a href="https://roadmap.sh/prompt-engineering" target="_blank">Prompt Engineering Roadmap</a></li>
+            <li><a href="https://roadmap.sh/game-developer" target="_blank">Game Developer Roadmap</a></li>
+            <li><a href="https://roadmap.sh/cyber-security" target="_blank">Cybersecurity Roadmap</a></li>
+          </ul>
+        </div>
+      </div>
+    
+      <h3> Practice Platforms</h3>
+      <div class="practice-grid">
+        <a href="https://leetcode.com" target="_blank">LeetCode</a>
+        <a href="https://www.hackerrank.com" target="_blank">HackerRank</a>
+        <a href="https://codeforces.com" target="_blank">Codeforces</a>
+        <a href="https://www.codechef.com" target="_blank">CodeChef</a>
+        <a href="https://www.exercism.org" target="_blank">Exercism</a>
+        <a href="https://www.topcoder.com" target="_blank">Topcoder</a>
+      </div>
+      <p>These platforms rank consistently in top‑10 lists for coding practice and interview prep in 2025 :contentReference[oaicite:1]{index=1}.</p>
+    </section>
+    
+    <style>
+    .techie-growth {
+      background: #0a0b1e;
+      color: #d0eaff;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .techie-growth h2 {
+      text-align: center;
+      font-size: 3rem;
+      color: #00e5ff;
+      margin-bottom: 50px;
+    }
+    .tracks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+    .track-card {
+      background: #1b1b3b;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.25);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .track-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px rgba(0, 229, 255, 0.4);
+    }
+    .track-card h3 {
+      color: #00f7ff;
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+    }
+    .track-card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .track-card li { margin: 8px 0; }
+    .track-card a {
+      color: #a0eaff;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .track-card a:hover { text-decoration: underline; }
+    
+    .practice-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .practice-grid a {
+      background: #1c1c3c;
+      padding: 12px;
+      border-radius: 8px;
+      display: block;
+      color: #d0faff;
+      font-weight: bold;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .practice-grid a:hover {
+      background: #12334c;
+    }
+    
+    .techie-growth h3 {
+      color: #00bfff;
+      margin-top: 30px;
+      font-size: 1.8rem;
+    }
+    .techie-growth p {
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    
+    @media(max-width:768px) {
+      .tracks { grid-template-columns: 1fr; }
+      .practice-grid { grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); }
+    }
+    </style>
+
+    
     <!-- Events Section -->
     <section id="events" class="section events-section">
         <div class="container">
