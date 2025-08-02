@@ -28,30 +28,161 @@
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-code"></i>
-                <span>CodeEX</span>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link active"> Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#modules" class="nav-link">Modules</a>
-                <a href="#events" class="nav-link">Events</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#leaderboard" class="nav-link">Leaderboard</a>
-                <a href="#resources" class="nav-link">Resources</a>
-                <a href="#crash-course" class="nav-link"> Crash Course </a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="#join" class="nav-link cta-button">Join Club</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="images/codeexlogo.png" alt="CodeEX Logo" class="logo-img" />
         </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#modules" class="nav-link">Modules</a>
+          <a href="#events" class="nav-link">Events</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#leaderboard" class="nav-link">Leaderboard</a>
+          <a href="#resources" class="nav-link">Resources</a>
+          <a href="#crash-course" class="nav-link">Crash Course</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="#join" class="nav-link cta-button">Join Club</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
+    
+    <style>
+    /* Navbar Styling */
+    .navbar {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 999;
+      background: linear-gradient(90deg, #0f0f0f 0%, #101d2d 50%, #0f0f0f 100%);
+      box-shadow: 0 0 10px #00ffe5;
+      padding: 12px 0;
+      animation: slideDown 0.6s ease-out;
+    }
+    
+    @keyframes slideDown {
+      0% { top: -80px; opacity: 0; }
+      100% { top: 0; opacity: 1; }
+    }
+    
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .logo-img {
+      height: 50px;
+      width: auto;
+      filter: drop-shadow(0 0 5px #00ffe5);
+    }
+    
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .nav-link {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 8px 12px;
+      position: relative;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-link::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background: #00ffe5;
+      transition: width 0.3s ease-in-out;
+    }
+    
+    .nav-link:hover::before {
+      width: 100%;
+    }
+    
+    .nav-link:hover {
+      color: #00ffe5;
+      transform: translateY(-2px);
+    }
+    
+    .cta-button {
+      background: #00ffe5;
+      color: #000;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00ffe5;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+    .cta-button:hover {
+      background: #00c2b3;
+      transform: scale(1.05);
+      color: #fff;
+    }
+    
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: #00ffe5;
+      margin: 4px 0;
+      border-radius: 2px;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 30px;
+        flex-direction: column;
+        background: #111;
+        padding: 20px;
+        border-radius: 10px;
+        width: 200px;
+        box-shadow: 0 0 10px #00ffe5;
+      }
+    
+      .nav-menu.show {
+        display: flex;
+      }
+    
+      .hamburger {
+        display: flex;
+      }
+    }
+    </style>
+    
+    <script>
+    // Mobile Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+    </script>
+
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -2158,8 +2289,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="contact-details">
                         <h4>Email Us</h4>
-                        <p>codeex@sssihl.edu.in<br>
-                        info.codeex@gmail.com</p>
+                        <p>sssihlcodeex@gmail.com<br>
+                        sssihlcodeesx@gmail.com</p>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -2504,5 +2635,6 @@ document.addEventListener('DOMContentLoaded', () => {
     <script src="scripts/leaderboard.js"></script>
 </body>
 </html>
+
 
 
