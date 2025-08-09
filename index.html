@@ -1513,7 +1513,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </script>
         <!-- Crash Course Section End -->
         <!--  AI Assistant Section -->
-        <section id="ai-assistant" style="background: #0f0f0f; color: #fff; font-family: 'Courier New', monospace; padding: 60px 20px;">
+<!--         <section id="ai-assistant" style="background: #0f0f0f; color: #fff; font-family: 'Courier New', monospace; padding: 60px 20px;">
           <div style="max-width: 800px; margin: auto;">
             <h2 style="text-align: center; font-size: 32px; color: #00ffcc; margin-bottom: 30px;">🤖 Ask CodeEX AI Assistant</h2>
             
@@ -1527,22 +1527,22 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
           </div>
         </section>
-        
+         -->
         <!-- Typing Animation + API Logic -->
-        <script>
+<!--         <script>
         async function sendToAI() {
           const input = document.getElementById("user-input");
           const box = document.getElementById("chat-box");
           const query = input.value.trim();
           if (!query) return;
-        
-          // Add User Message
+         -->
+<!--           // Add User Message
           const userMsg = document.createElement("p");
           userMsg.innerHTML = `<span style="color:#00ffcc;">You:</span> ${query}`;
-          box.appendChild(userMsg);
+          box.appendChild(userMsg); -->
         
           // Add AI "thinking" message
-          const aiMsg = document.createElement("p");
+<!--           const aiMsg = document.createElement("p");
           aiMsg.innerHTML = `<span style="color:#ffdd57;">CodeEX AI:</span> <span id="typing">Thinking...</span>`;
           box.appendChild(aiMsg);
           box.scrollTop = box.scrollHeight;
@@ -1581,7 +1581,7 @@ document.addEventListener('DOMContentLoaded', () => {
           typeChar();
         }
         </script>
-
+ -->
 <!-- Join Section -->
     <section id="join" class="section join-section" style="padding: 80px 0; background: #0f2027;">
       <div class="container">
@@ -2505,6 +2505,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <script src="scripts/leaderboard.js"></script>
 </body>
 </html>
+
 
 
 
