@@ -314,7 +314,7 @@ body {
 }
 
 .pulse-btn {
-    animation: pulse 2s infinite;
+    animation: ;
 }
 
 .scroll-indicator {
@@ -1401,5 +1401,6 @@ body {
         align-items: center;
     }
 }
+
 
 
