@@ -249,7 +249,7 @@ body {
     margin-bottom: 2rem;
     color: rgba(255, 255, 255, 0.8);
     opacity: 0;
-    animation: fadeInUp 0.8s ease 0.5s forwards;
+    
 }
 
 .hero-buttons {
@@ -258,7 +258,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     opacity: 0;
-    animation: fadeInUp 0.8s ease 0.8s forwards;
+    
 }
 
 .btn {
@@ -1401,4 +1401,5 @@ body {
         align-items: center;
     }
 }
+
 
